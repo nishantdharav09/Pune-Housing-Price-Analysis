@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8aaf956aac1699992913543271ab2b6b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8aaf956aac1699992913543271ab2b6b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8aaf956aac1699992913543271ab2b6b = L.map(
+                "map_8aaf956aac1699992913543271ab2b6b",
+                {
+                    center: [18.5204, 73.8567],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9286f66eb3151fb85be944916e2eaea4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9286f66eb3151fb85be944916e2eaea4.addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+            var marker_2d1a3e1e67e5e3ea9d705cd9c75aaaf5 = L.marker(
+                [18.5074, 73.8077],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_ad486085aabc859621d09be7e46603dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51739262ad7684b5bc777c3b2c101bc8 = $(`<div id="html_51739262ad7684b5bc777c3b2c101bc8" style="width: 100.0%; height: 100.0%;">Kothrud<br>Price: ₹500000</div>`)[0];
+                popup_ad486085aabc859621d09be7e46603dd.setContent(html_51739262ad7684b5bc777c3b2c101bc8);
+            
+        
+
+        marker_2d1a3e1e67e5e3ea9d705cd9c75aaaf5.bindPopup(popup_ad486085aabc859621d09be7e46603dd)
+        ;
+
+        
+    
+    
+            var marker_da4db4c1e1fa8c434bf0347cafac4001 = L.marker(
+                [18.591, 73.7389],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_b1544ccd643f721396ea5f934af974b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_672834a7df525a6936665b0746083572 = $(`<div id="html_672834a7df525a6936665b0746083572" style="width: 100.0%; height: 100.0%;">Hinjewadi<br>Price: ₹1000000</div>`)[0];
+                popup_b1544ccd643f721396ea5f934af974b1.setContent(html_672834a7df525a6936665b0746083572);
+            
+        
+
+        marker_da4db4c1e1fa8c434bf0347cafac4001.bindPopup(popup_b1544ccd643f721396ea5f934af974b1)
+        ;
+
+        
+    
+    
+            var marker_8053eaaea8f15d61a1b2da275057fc0e = L.marker(
+                [18.559, 73.7868],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_29ecd7674c38d64323b8d4d72d542e23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71ce5ef09e86eea4eac37689b1d7e1ac = $(`<div id="html_71ce5ef09e86eea4eac37689b1d7e1ac" style="width: 100.0%; height: 100.0%;">Baner<br>Price: ₹1500000</div>`)[0];
+                popup_29ecd7674c38d64323b8d4d72d542e23.setContent(html_71ce5ef09e86eea4eac37689b1d7e1ac);
+            
+        
+
+        marker_8053eaaea8f15d61a1b2da275057fc0e.bindPopup(popup_29ecd7674c38d64323b8d4d72d542e23)
+        ;
+
+        
+    
+    
+            var marker_487bc3d5584555c2833d8a188fbb46bc = L.marker(
+                [18.5975, 73.7898],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_054e7d440e36f8d675a96c8a92ecaac1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7be245f190594a1a6ad72f6143a3e09c = $(`<div id="html_7be245f190594a1a6ad72f6143a3e09c" style="width: 100.0%; height: 100.0%;">Wakad<br>Price: ₹2000000</div>`)[0];
+                popup_054e7d440e36f8d675a96c8a92ecaac1.setContent(html_7be245f190594a1a6ad72f6143a3e09c);
+            
+        
+
+        marker_487bc3d5584555c2833d8a188fbb46bc.bindPopup(popup_054e7d440e36f8d675a96c8a92ecaac1)
+        ;
+
+        
+    
+    
+            var marker_e7f117af2996a02ff5f8c916073b2c23 = L.marker(
+                [18.561, 73.807],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_7ce7e224c8271ff25f5420d487ef82a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ccc2c999280675702c2837582afc1b3 = $(`<div id="html_0ccc2c999280675702c2837582afc1b3" style="width: 100.0%; height: 100.0%;">Aundh<br>Price: ₹2500000</div>`)[0];
+                popup_7ce7e224c8271ff25f5420d487ef82a0.setContent(html_0ccc2c999280675702c2837582afc1b3);
+            
+        
+
+        marker_e7f117af2996a02ff5f8c916073b2c23.bindPopup(popup_7ce7e224c8271ff25f5420d487ef82a0)
+        ;
+
+        
+    
+    
+            var marker_f1ab31974f2acb5d3cd91803d07b2bcf = L.marker(
+                [18.58, 73.98],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_8ede2024a16a49ae5ddfc4587dba485a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c980df919f71458d537a0183859b716 = $(`<div id="html_4c980df919f71458d537a0183859b716" style="width: 100.0%; height: 100.0%;">Wagholi<br>Price: ₹1200000</div>`)[0];
+                popup_8ede2024a16a49ae5ddfc4587dba485a.setContent(html_4c980df919f71458d537a0183859b716);
+            
+        
+
+        marker_f1ab31974f2acb5d3cd91803d07b2bcf.bindPopup(popup_8ede2024a16a49ae5ddfc4587dba485a)
+        ;
+
+        
+    
+    
+            var marker_79018f329668ff2fe0429790320bcfaa = L.marker(
+                [18.65, 74.05],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_c6acaca3cb716ea92fb80cd3918ece0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8be77d57c98968c581368464c8dc468b = $(`<div id="html_8be77d57c98968c581368464c8dc468b" style="width: 100.0%; height: 100.0%;">Bakhori Phata<br>Price: ₹900000</div>`)[0];
+                popup_c6acaca3cb716ea92fb80cd3918ece0d.setContent(html_8be77d57c98968c581368464c8dc468b);
+            
+        
+
+        marker_79018f329668ff2fe0429790320bcfaa.bindPopup(popup_c6acaca3cb716ea92fb80cd3918ece0d)
+        ;
+
+        
+    
+    
+            var marker_f6dc349fbfe49d032df56dec5e49414e = L.marker(
+                [18.5089, 73.926],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_9205181b6ea7abd63209b65550199662 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb2fd34f7248718c5dfa237e6185016d = $(`<div id="html_cb2fd34f7248718c5dfa237e6185016d" style="width: 100.0%; height: 100.0%;">Hadapsar<br>Price: ₹1800000</div>`)[0];
+                popup_9205181b6ea7abd63209b65550199662.setContent(html_cb2fd34f7248718c5dfa237e6185016d);
+            
+        
+
+        marker_f6dc349fbfe49d032df56dec5e49414e.bindPopup(popup_9205181b6ea7abd63209b65550199662)
+        ;
+
+        
+    
+    
+            var marker_799b56eca89c4c307682bbe2bf7db038 = L.marker(
+                [18.5516, 73.9436],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_f1556482a7bca3206b9d1454ad141cc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ad1865267fa53fac3b9262ee365d181 = $(`<div id="html_9ad1865267fa53fac3b9262ee365d181" style="width: 100.0%; height: 100.0%;">Kharadi<br>Price: ₹2200000</div>`)[0];
+                popup_f1556482a7bca3206b9d1454ad141cc6.setContent(html_9ad1865267fa53fac3b9262ee365d181);
+            
+        
+
+        marker_799b56eca89c4c307682bbe2bf7db038.bindPopup(popup_f1556482a7bca3206b9d1454ad141cc6)
+        ;
+
+        
+    
+    
+            var marker_e37f85cca72075b685f64fd495aa5c46 = L.marker(
+                [18.5679, 73.9143],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_6923d169ee67b1ee580edfadc5507084 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b95da161fa85909391cb1ce4e1edbeff = $(`<div id="html_b95da161fa85909391cb1ce4e1edbeff" style="width: 100.0%; height: 100.0%;">Viman Nagar<br>Price: ₹2400000</div>`)[0];
+                popup_6923d169ee67b1ee580edfadc5507084.setContent(html_b95da161fa85909391cb1ce4e1edbeff);
+            
+        
+
+        marker_e37f85cca72075b685f64fd495aa5c46.bindPopup(popup_6923d169ee67b1ee580edfadc5507084)
+        ;
+
+        
+    
+    
+            var marker_078266922b14200835b12153b5cb8fb3 = L.marker(
+                [18.5308, 73.8475],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_eeaf9d57e2f9bd7d29353ae408d4723b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e726392af77bf6d7f249de05cc6d0fb0 = $(`<div id="html_e726392af77bf6d7f249de05cc6d0fb0" style="width: 100.0%; height: 100.0%;">Shivaji Nagar<br>Price: ₹2600000</div>`)[0];
+                popup_eeaf9d57e2f9bd7d29353ae408d4723b.setContent(html_e726392af77bf6d7f249de05cc6d0fb0);
+            
+        
+
+        marker_078266922b14200835b12153b5cb8fb3.bindPopup(popup_eeaf9d57e2f9bd7d29353ae408d4723b)
+        ;
+
+        
+    
+    
+            var marker_2547a740dd822642e126ce7a23467d74 = L.marker(
+                [18.5362, 73.895],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_68210e091c43ade64c94820b6e8ed396 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbff717fe5bbe30d8e2e2a1a8f4ea910 = $(`<div id="html_cbff717fe5bbe30d8e2e2a1a8f4ea910" style="width: 100.0%; height: 100.0%;">Koregaon Park<br>Price: ₹3000000</div>`)[0];
+                popup_68210e091c43ade64c94820b6e8ed396.setContent(html_cbff717fe5bbe30d8e2e2a1a8f4ea910);
+            
+        
+
+        marker_2547a740dd822642e126ce7a23467d74.bindPopup(popup_68210e091c43ade64c94820b6e8ed396)
+        ;
+
+        
+    
+    
+            var marker_ca818fa17c6c67ec0cbc78ca81203716 = L.marker(
+                [18.6298, 73.7997],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_8465e964c0f5f694417ca88828e217ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_367d55246133a1d4463f51a70e672a9c = $(`<div id="html_367d55246133a1d4463f51a70e672a9c" style="width: 100.0%; height: 100.0%;">Pimpri-Chinchwad<br>Price: ₹1700000</div>`)[0];
+                popup_8465e964c0f5f694417ca88828e217ae.setContent(html_367d55246133a1d4463f51a70e672a9c);
+            
+        
+
+        marker_ca818fa17c6c67ec0cbc78ca81203716.bindPopup(popup_8465e964c0f5f694417ca88828e217ae)
+        ;
+
+        
+    
+    
+            var marker_e5863d8beed319ce5f9c9fb93a3c4970 = L.marker(
+                [18.735, 73.675],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_7914dc44370eb82f357e2df2a0d01863 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc2dbd59c3d3dc5d393a8effbcfa1202 = $(`<div id="html_dc2dbd59c3d3dc5d393a8effbcfa1202" style="width: 100.0%; height: 100.0%;">Talegaon<br>Price: ₹1100000</div>`)[0];
+                popup_7914dc44370eb82f357e2df2a0d01863.setContent(html_dc2dbd59c3d3dc5d393a8effbcfa1202);
+            
+        
+
+        marker_e5863d8beed319ce5f9c9fb93a3c4970.bindPopup(popup_7914dc44370eb82f357e2df2a0d01863)
+        ;
+
+        
+    
+    
+            var marker_eb68abc608738ee94a372f757629ee44 = L.marker(
+                [18.76, 73.86],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_683cd994814d561feaf4d3b19ce143cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9771448fcefd99ae6825b8741afe673 = $(`<div id="html_b9771448fcefd99ae6825b8741afe673" style="width: 100.0%; height: 100.0%;">Chakan<br>Price: ₹1300000</div>`)[0];
+                popup_683cd994814d561feaf4d3b19ce143cd.setContent(html_b9771448fcefd99ae6825b8741afe673);
+            
+        
+
+        marker_eb68abc608738ee94a372f757629ee44.bindPopup(popup_683cd994814d561feaf4d3b19ce143cd)
+        ;
+
+        
+    
+    
+            var marker_f5b571d0eb94c9a82aca46ea4d0dc415 = L.marker(
+                [18.5167, 73.9317],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_33fdfd852da913a543883f65c706809f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_686e86d31c8d7c2589297f4d5f48f904 = $(`<div id="html_686e86d31c8d7c2589297f4d5f48f904" style="width: 100.0%; height: 100.0%;">Magarpatta<br>Price: ₹2300000</div>`)[0];
+                popup_33fdfd852da913a543883f65c706809f.setContent(html_686e86d31c8d7c2589297f4d5f48f904);
+            
+        
+
+        marker_f5b571d0eb94c9a82aca46ea4d0dc415.bindPopup(popup_33fdfd852da913a543883f65c706809f)
+        ;
+
+        
+    
+    
+            var marker_b0d717cb3b2fa46f2b43ae891d603c44 = L.marker(
+                [18.5485, 73.9036],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_c7aa9f21b54420f384420c3dd3500f9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c77a81079b336acc77c014815e568be = $(`<div id="html_7c77a81079b336acc77c014815e568be" style="width: 100.0%; height: 100.0%;">Kalyani Nagar<br>Price: ₹2800000</div>`)[0];
+                popup_c7aa9f21b54420f384420c3dd3500f9f.setContent(html_7c77a81079b336acc77c014815e568be);
+            
+        
+
+        marker_b0d717cb3b2fa46f2b43ae891d603c44.bindPopup(popup_c7aa9f21b54420f384420c3dd3500f9f)
+        ;
+
+        
+    
+    
+            var marker_7d10898f4d97e05a6498697e0ad99562 = L.marker(
+                [18.552, 73.8787],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_7c7c3448af961ab4c9d876171d75fc58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5293874759483ddb8e8989cfe99a18d6 = $(`<div id="html_5293874759483ddb8e8989cfe99a18d6" style="width: 100.0%; height: 100.0%;">Yerwada<br>Price: ₹1900000</div>`)[0];
+                popup_7c7c3448af961ab4c9d876171d75fc58.setContent(html_5293874759483ddb8e8989cfe99a18d6);
+            
+        
+
+        marker_7d10898f4d97e05a6498697e0ad99562.bindPopup(popup_7c7c3448af961ab4c9d876171d75fc58)
+        ;
+
+        
+    
+    
+            var marker_4ddb5ad4b19ba3eb1e061f44b13fb570 = L.marker(
+                [18.5814, 73.9239],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_b474b3f991849052b93ef3d3d9d0ccc2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4669e8ed2f4fcb89fbc6e4e48fc69a53 = $(`<div id="html_4669e8ed2f4fcb89fbc6e4e48fc69a53" style="width: 100.0%; height: 100.0%;">Lohegaon<br>Price: ₹1600000</div>`)[0];
+                popup_b474b3f991849052b93ef3d3d9d0ccc2.setContent(html_4669e8ed2f4fcb89fbc6e4e48fc69a53);
+            
+        
+
+        marker_4ddb5ad4b19ba3eb1e061f44b13fb570.bindPopup(popup_b474b3f991849052b93ef3d3d9d0ccc2)
+        ;
+
+        
+    
+    
+            var marker_36240d1d923b0ee98e210a0b7182d773 = L.marker(
+                [18.5743, 73.9035],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_328138986c3e0a343454894c1ac9d22b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6034fa8f2f5d912e69394f513d6d78d4 = $(`<div id="html_6034fa8f2f5d912e69394f513d6d78d4" style="width: 100.0%; height: 100.0%;">Dhanori<br>Price: ₹1500000</div>`)[0];
+                popup_328138986c3e0a343454894c1ac9d22b.setContent(html_6034fa8f2f5d912e69394f513d6d78d4);
+            
+        
+
+        marker_36240d1d923b0ee98e210a0b7182d773.bindPopup(popup_328138986c3e0a343454894c1ac9d22b)
+        ;
+
+        
+    
+    
+            var marker_2cf26d4227797374027fe8afa6a2fc96 = L.marker(
+                [18.4529, 73.9],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_98825fe2ffa66588f00da13814465c18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2af409addedbdb1ef1e2e61e10a57ca = $(`<div id="html_c2af409addedbdb1ef1e2e61e10a57ca" style="width: 100.0%; height: 100.0%;">Undri<br>Price: ₹1400000</div>`)[0];
+                popup_98825fe2ffa66588f00da13814465c18.setContent(html_c2af409addedbdb1ef1e2e61e10a57ca);
+            
+        
+
+        marker_2cf26d4227797374027fe8afa6a2fc96.bindPopup(popup_98825fe2ffa66588f00da13814465c18)
+        ;
+
+        
+    
+    
+            var marker_0dae7d666841aac6769961c812d229fe = L.marker(
+                [18.4765, 73.8997],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_d937bcc4353e7642c39fccd198742ae6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a666585d1c1161f506d24671cfe38377 = $(`<div id="html_a666585d1c1161f506d24671cfe38377" style="width: 100.0%; height: 100.0%;">NIBM Road<br>Price: ₹2100000</div>`)[0];
+                popup_d937bcc4353e7642c39fccd198742ae6.setContent(html_a666585d1c1161f506d24671cfe38377);
+            
+        
+
+        marker_0dae7d666841aac6769961c812d229fe.bindPopup(popup_d937bcc4353e7642c39fccd198742ae6)
+        ;
+
+        
+    
+    
+            var marker_a3849332b7887131fe6facb2546a6dd8 = L.marker(
+                [18.4575, 73.8077],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_a4f8d31c6e278871f99834be50fbb724 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae870f8770b5f7b770c0c43be657901f = $(`<div id="html_ae870f8770b5f7b770c0c43be657901f" style="width: 100.0%; height: 100.0%;">Sinhagad Road<br>Price: ₹1700000</div>`)[0];
+                popup_a4f8d31c6e278871f99834be50fbb724.setContent(html_ae870f8770b5f7b770c0c43be657901f);
+            
+        
+
+        marker_a3849332b7887131fe6facb2546a6dd8.bindPopup(popup_a4f8d31c6e278871f99834be50fbb724)
+        ;
+
+        
+    
+    
+            var marker_8d6242ad0f9694dfe42e6133eec348b0 = L.marker(
+                [18.4875, 73.8077],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_996f1940317efadbe4aa760c239b8244 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6a6f50a58653f8fb43d00a1ed7a653b = $(`<div id="html_e6a6f50a58653f8fb43d00a1ed7a653b" style="width: 100.0%; height: 100.0%;">Warje<br>Price: ₹1800000</div>`)[0];
+                popup_996f1940317efadbe4aa760c239b8244.setContent(html_e6a6f50a58653f8fb43d00a1ed7a653b);
+            
+        
+
+        marker_8d6242ad0f9694dfe42e6133eec348b0.bindPopup(popup_996f1940317efadbe4aa760c239b8244)
+        ;
+
+        
+    
+    
+            var marker_082e1793524dcf6d4ffbc0cc2e229f95 = L.marker(
+                [18.489, 73.8167],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_1c16e2f10de13fc6b0e8de595008c793 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be43d6430ecc096ef46652e16fb12b45 = $(`<div id="html_be43d6430ecc096ef46652e16fb12b45" style="width: 100.0%; height: 100.0%;">Karve Nagar<br>Price: ₹1750000</div>`)[0];
+                popup_1c16e2f10de13fc6b0e8de595008c793.setContent(html_be43d6430ecc096ef46652e16fb12b45);
+            
+        
+
+        marker_082e1793524dcf6d4ffbc0cc2e229f95.bindPopup(popup_1c16e2f10de13fc6b0e8de595008c793)
+        ;
+
+        
+    
+    
+            var marker_da94da33085583c57d2253625d0fd513 = L.marker(
+                [18.5136, 73.773],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_ff61bfa2f7fcff835ed60f714496cc6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1dfa38db98842463426ecbeaeafdecf7 = $(`<div id="html_1dfa38db98842463426ecbeaeafdecf7" style="width: 100.0%; height: 100.0%;">Bavdhan<br>Price: ₹2200000</div>`)[0];
+                popup_ff61bfa2f7fcff835ed60f714496cc6b.setContent(html_1dfa38db98842463426ecbeaeafdecf7);
+            
+        
+
+        marker_da94da33085583c57d2253625d0fd513.bindPopup(popup_ff61bfa2f7fcff835ed60f714496cc6b)
+        ;
+
+        
+    
+    
+            var marker_f0e25e983fa96d4855c09b0e9ac7764c = L.marker(
+                [18.5416, 73.7925],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_47399443d19b35d0724ea0953e681426 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ad090d5479850895999b8c0ea28d0d7 = $(`<div id="html_1ad090d5479850895999b8c0ea28d0d7" style="width: 100.0%; height: 100.0%;">Pashan<br>Price: ₹2100000</div>`)[0];
+                popup_47399443d19b35d0724ea0953e681426.setContent(html_1ad090d5479850895999b8c0ea28d0d7);
+            
+        
+
+        marker_f0e25e983fa96d4855c09b0e9ac7764c.bindPopup(popup_47399443d19b35d0724ea0953e681426)
+        ;
+
+        
+    
+    
+            var marker_c8166e4bc7578db25df666954d4f4616 = L.marker(
+                [18.555, 73.74],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_e0adc91ef0aabe654d2ce2a72cca9a42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55f4164c4c931d429a711cb8bf645512 = $(`<div id="html_55f4164c4c931d429a711cb8bf645512" style="width: 100.0%; height: 100.0%;">Sus<br>Price: ₹2000000</div>`)[0];
+                popup_e0adc91ef0aabe654d2ce2a72cca9a42.setContent(html_55f4164c4c931d429a711cb8bf645512);
+            
+        
+
+        marker_c8166e4bc7578db25df666954d4f4616.bindPopup(popup_e0adc91ef0aabe654d2ce2a72cca9a42)
+        ;
+
+        
+    
+    
+            var marker_d2aa8860bb6c46272fd277d5f94e52d2 = L.marker(
+                [18.57, 73.78],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_237ba58ec92c0e930117bedaea51c83a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85ff794b373b9646244f00e237882542 = $(`<div id="html_85ff794b373b9646244f00e237882542" style="width: 100.0%; height: 100.0%;">Balewadi<br>Price: ₹2400000</div>`)[0];
+                popup_237ba58ec92c0e930117bedaea51c83a.setContent(html_85ff794b373b9646244f00e237882542);
+            
+        
+
+        marker_d2aa8860bb6c46272fd277d5f94e52d2.bindPopup(popup_237ba58ec92c0e930117bedaea51c83a)
+        ;
+
+        
+    
+    
+            var marker_8996c29999333b0c2f80e7f9cac020e2 = L.marker(
+                [18.651, 73.745],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_61e3ae9143a3a28ea57deb79810153aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a22a5b8f66ce284e96a0d7b74efc760f = $(`<div id="html_a22a5b8f66ce284e96a0d7b74efc760f" style="width: 100.0%; height: 100.0%;">Ravet<br>Price: ₹1600000</div>`)[0];
+                popup_61e3ae9143a3a28ea57deb79810153aa.setContent(html_a22a5b8f66ce284e96a0d7b74efc760f);
+            
+        
+
+        marker_8996c29999333b0c2f80e7f9cac020e2.bindPopup(popup_61e3ae9143a3a28ea57deb79810153aa)
+        ;
+
+        
+    
+    
+            var marker_5c583d5bed521279996b08bd63714479 = L.marker(
+                [18.65, 73.77],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_e3e02480f6041a6e16e00a2db1c2971d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a0f651316a33e76d339d4bfcd984c93 = $(`<div id="html_2a0f651316a33e76d339d4bfcd984c93" style="width: 100.0%; height: 100.0%;">Akurdi<br>Price: ₹1500000</div>`)[0];
+                popup_e3e02480f6041a6e16e00a2db1c2971d.setContent(html_2a0f651316a33e76d339d4bfcd984c93);
+            
+        
+
+        marker_5c583d5bed521279996b08bd63714479.bindPopup(popup_e3e02480f6041a6e16e00a2db1c2971d)
+        ;
+
+        
+    
+    
+            var marker_336de40e3ba6127124921e0749b91119 = L.marker(
+                [18.657, 73.77],
+                {
+}
+            ).addTo(map_8aaf956aac1699992913543271ab2b6b);
+        
+    
+        var popup_77dbdfe0de778e1ad00ed729c71ee616 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd8e97bb8626e9e8698a85348fecd581 = $(`<div id="html_bd8e97bb8626e9e8698a85348fecd581" style="width: 100.0%; height: 100.0%;">Nigdi<br>Price: ₹1550000</div>`)[0];
+                popup_77dbdfe0de778e1ad00ed729c71ee616.setContent(html_bd8e97bb8626e9e8698a85348fecd581);
+            
+        
+
+        marker_336de40e3ba6127124921e0749b91119.bindPopup(popup_77dbdfe0de778e1ad00ed729c71ee616)
+        ;
+
+        
+    
+</script>
+</html>
